@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vaibhav's Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -19,39 +19,96 @@
             color: white;
             font-family: "Poppins", "sans-serif";
         }
+
         nav {
             display: flex;
             align-items: center;
             justify-content: space-around;
             height: 75px;
-            background-color:rgb(19, 13, 26);
+            background-color: rgb(19, 13, 26);
         }
+
         nav ul {
             display: flex;
             justify-content: center;
         }
+
         nav ul li {
             list-style-type: none;
-            margin:0 23px;
+            margin: 0 23px;
         }
-            .left{
-                font-size:1.5rem;
-            }
-            .firstSection{
-                display: flex;
-                justify-content: space-around;
-                margin: 23px 0;
-            }
-            .firstSection div{
-               width: 30%;
-            }
 
-            .leftSection{
-                background-color:red;
-            }
-            .rightSection{
-                background-color:red;
-            }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+
+        }
+
+        nav ul li a:hover {
+            color: blueviolet;
+            font-size: 1.10rem;
+
+        }
+
+        main hr {
+            border: 0cap;
+            background-color: darkseagreen;
+            height: 1px;
+            margin: 40px 80px;
+
+        }
+
+        .left {
+            font-size: 1rem;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            margin: 80px 0;
+            height: 55vh;
+        }
+
+        .firstSection>div {
+            width: 30%;
+
+        }
+
+        .leftSection {
+            font-size: 2rem;
+            align-items: center;
+        }
+
+        .rightSection img {
+            width: 120%;
+        }
+
+        .text-purple {
+            color: blueviolet;
+        }
+
+        .text-gray {
+            color: rgb(172, 168, 168);
+        }
+
+        .domain {
+            color: blueviolet;
+        }
+
+        #element {
+            color: rgb(76, 226, 201);
+        }
+
+        .secondSection {
+            max-width: 80vw;
+            font-size: xx-small;
+            margin: auto;
+            height: 80vh;
+        }
+
+        .secondSection h1 {
+            font-size: 1.5rem;
+        }
     </style>
 </head>
 <header>
@@ -59,27 +116,61 @@
         <dev class="left">Vaibhav's Portfolio</dev>
         <dev class="right"></dev>
         <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Services</li>
-            <li>Projects</li>
-            <li>Contact Me</li>
+            <li><a href="/">Home</a></li>
+            <li><a href="/">about</a></li>
+            <li><a href="/">Services</a></li>
+            <li><a href="/">Projects</a></li>
+            <li><a href="/">Contact Me</a></li>
         </ul>
     </nav>
 </header>
 <main>
     <section class="firstSection">
         <div class="leftSection">
-            Hi My Name is Vaibhav
-            <div>and I am a Web Developer</div>
+            Hi My Name is <span class="text-purple">Vaibhav</span>
+
+            <div>
+                & I am a Passionate <span class="domain">Python Fullstack Developer</span>
+            </div>
+            <span id="element"></span>
         </div>
 
         <div class="rightSection">
-            right
+            <img src="bg.png" alt="dp">
         </div>
-    
-     </section>
+    </section>
+
+    <hr style="
+     border: 0cap;
+     background-color: darkseagreen;
+     height: 1px;
+     margin: 50px 84px;
+     padding-top: 1px;
+
+    ">
+
+    <section class="secondSection">
+        <span class="text-gray">What I Have Done So Far In My Academics</span>
+        <h1>Relevant Course Experience</h1>
+        <div class="box" style="background:white;
+        width: 80vw;
+        height: 2px;
+        margin: 45px ;
+        ">
+
+        </div>
+    </section>
+
+
 </main>
+<script src="https://unpkg.com/typed.js@3.0.0/dist/typed.umd.js"></script>
+<!-- Setup and start animation! -->
+<script>
+    var typed = new Typed('#element', {
+        strings: ['and Aspiring <<--->> Data Science/Aiml Tech Professional'],
+        typeSpeed: 50,
+    });
+</script>
 </body>
 
 </html>
