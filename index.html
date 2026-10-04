@@ -90,6 +90,23 @@
             align-items: center;
         }
 
+        .leftSection .button {
+            top: 3px;
+            font-size: 60px;
+            position: relative;
+        }
+
+
+        .leftSection .btn {
+            background: #2f5579;
+            color: white;
+            border: 2px solid white;
+            border-radius: 6px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+
 
         .rightSection img {
             width: 100%;
@@ -106,7 +123,8 @@
             color: rgb(151, 148, 148);
             font-size: 15px;
         }
-        .intro{
+
+        .intro {
             color: rgb(171, 195, 216);
         }
 
@@ -115,7 +133,7 @@
         }
 
         #element {
-             color: rgb(171, 195, 216);
+            color: rgb(171, 195, 216);
         }
 
         .secondSection {
@@ -163,15 +181,15 @@
             font-size: 12px;
             text-align: center;
         }
-        .icon-below{
-        
+
+        .icon-below {
+
             width: 82px;
             position: absolute;
             top: 88px;
             left: 4%;
             transform: translateX(-50%);
         }
-        
     </style>
 </head>
 
@@ -195,12 +213,17 @@
     <main>
         <section class="firstSection">
             <div class="leftSection">
-               <span class="intro"> Hi, My Name is</span> <span class="text-purple">Vaibhav Pagrut</span>
+                <span class="intro"> Hi, My Name is</span> <span class="text-purple">Vaibhav Pagrut</span>
 
                 <div>
-                   <span class="intro">& I am a Passionate </span> <span class="domain">Web Developer</span>
+                    <span class="intro">& I am a Passionate </span> <span class="domain">Web Developer</span>
                 </div>
                 <span id="element"></span>
+                <div class="button">
+                    <button class="btn">Download Resume</button>
+                    <button class="btn">Github</button>
+                    <button class="btn">Linkedin</button>
+                </div>
             </div>
 
             <div class="rightSection">
@@ -235,28 +258,28 @@
                     </div>
 
                     <div class="vertical">
-                         <img class="icon-below" src="dbms.png" alt="">
+                        <img class="icon-below" src="dbms.png" alt="">
                         <div class="vertical-title">
                             Database Management Systems [DBMS]
                         </div>
                     </div>
 
                     <div class="vertical">
-                         <img class="icon-below" src="oop.png" alt="">
+                        <img class="icon-below" src="oop.png" alt="">
                         <div class="vertical-title">
                             Object Oriented Programming [OOP]
                         </div>
                     </div>
 
                     <div class="vertical">
-                         <img class="icon-below" src="os.png" alt="">
+                        <img class="icon-below" src="os.png" alt="">
                         <div class="vertical-title">
                             Operating System [OS]
                         </div>
                     </div>
 
                     <div class="vertical">
-                         <img class="icon-below" src="ca.png" alt="">
+                        <img class="icon-below" src="ca.png" alt="">
                         <div class="vertical-title">
                             Computer Architecture [CA]
                         </div>
@@ -266,12 +289,11 @@
 
             </div>
 
-
-
         </section>
-
-
     </main>
+    <footer>
+        <div class="flex"></div>
+    </footer>
     <script src="https://unpkg.com/typed.js@3.0.0/dist/typed.umd.js"></script>
     <!-- Setup and start animation! -->
     <script>
