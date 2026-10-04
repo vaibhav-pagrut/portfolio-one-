@@ -81,7 +81,7 @@
         }
 
         .firstSection>div {
-            width: 30%;
+            width: 40%;
 
         }
 
@@ -99,20 +99,23 @@
 
 
         .text-purple {
-            color: blueviolet;
+            color: rgb(232, 231, 233);
         }
 
         .text-gray {
             color: rgb(151, 148, 148);
             font-size: 15px;
         }
+        .intro{
+            color: rgb(171, 195, 216);
+        }
 
         .domain {
-            color: blueviolet;
+            color: rgb(79, 131, 241);
         }
 
         #element {
-            color: rgb(76, 226, 201);
+             color: rgb(171, 195, 216);
         }
 
         .secondSection {
@@ -153,7 +156,7 @@
 
         .vertical-title {
             position: absolute;
-            top: 95px;
+            top: 180px;
             left: 50%;
             transform: translateX(-50%);
             width: 130px;
@@ -164,7 +167,7 @@
         
             width: 82px;
             position: absolute;
-            top: 3px;
+            top: 88px;
             left: 4%;
             transform: translateX(-50%);
         }
@@ -192,10 +195,10 @@
     <main>
         <section class="firstSection">
             <div class="leftSection">
-                Hi, My Name is <span class="text-purple">Vaibhav</span>
+               <span class="intro"> Hi, My Name is</span> <span class="text-purple">Vaibhav Pagrut</span>
 
                 <div>
-                    & I am a Passionate <span class="domain">Python Fullstack Developer</span>
+                   <span class="intro">& I am a Passionate </span> <span class="domain">Web Developer</span>
                 </div>
                 <span id="element"></span>
             </div>
@@ -273,7 +276,7 @@
     <!-- Setup and start animation! -->
     <script>
         var typed = new Typed('#element', {
-            strings: ['and Aspiring Data Science/Aiml Tech Professional'],
+            strings: ['and Aspiring <span class="domain">Data Science/Aiml</span> Tech Professional'],
             typeSpeed: 50,
         });
     </script>
